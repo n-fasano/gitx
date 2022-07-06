@@ -1,0 +1,4 @@
+#! /bin/sh
+
+# Browser to open PRs in
+export GITX_BROWSER="google-chrome" # google-chrome/firefox/...
