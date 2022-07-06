@@ -23,11 +23,11 @@ shift
 
 case "$COMMAND" in
     cp)
-        . "$GITX_SCRIPTS/gitx-commit-and-push.sh" $1
+        . "$GITX_SCRIPTS/gitx-commit-and-push.sh" "$1"
     ;;
 
     cpr)
-        . "$GITX_SCRIPTS/gitx-commit-into-pr.sh" $1
+        . "$GITX_SCRIPTS/gitx-commit-into-pr.sh" "$1"
     ;;
 
     *)
