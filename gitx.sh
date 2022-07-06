@@ -27,7 +27,11 @@ case "$COMMAND" in
     ;;
 
     cpr)
-        . "$GITX_SCRIPTS/gitx-commit-into-pr.sh" "$1"
+        . "$GITX_SCRIPTS/gitx-commit-into-pull-request.sh" "$1"
+    ;;
+
+    pr)
+        . "$GITX_SCRIPTS/gitx-pull-request.sh" "$1"
     ;;
 
     *)
