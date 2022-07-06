@@ -14,4 +14,4 @@ MESSAGE="$1"
 BRANCH="$(git branch --show-current)"
 
 git commit -m "$MESSAGE"
-git push
+git push --set-upstream origin "$BRANCH"
