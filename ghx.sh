@@ -11,27 +11,27 @@ help () {
 
 
 Usage:
-gitx cp <commit-message>
-gitx cpr <commit-message>"
+ghx cp <commit-message>
+ghx cpr <commit-message>"
 }
 
-GITX_SCRIPTS="$(dirname "${BASH_SOURCE[0]}")"
-source "$GITX_SCRIPTS/config.sh"
+GHX_SCRIPTS="$(dirname "${BASH_SOURCE[0]}")"
+source "$GHX_SCRIPTS/config.sh"
 
 COMMAND="$1"
 shift
 
 case "$COMMAND" in
     cp)
-        . "$GITX_SCRIPTS/gitx-commit-and-push.sh" "$1"
+        . "$GHX_SCRIPTS/ghx-commit-and-push.sh" "$1"
     ;;
 
     cpr)
-        . "$GITX_SCRIPTS/gitx-commit-into-pull-request.sh" "$1"
+        . "$GHX_SCRIPTS/ghx-commit-into-pull-request.sh" "$1"
     ;;
 
     pr)
-        . "$GITX_SCRIPTS/gitx-pull-request.sh" "$1"
+        . "$GHX_SCRIPTS/ghx-pull-request.sh" "$1"
     ;;
 
     *)

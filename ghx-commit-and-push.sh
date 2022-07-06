@@ -2,10 +2,10 @@
 
 help () {
     echo "Usage:"
-    echo "gitx cp <commit-message>"
+    echo "ghx cp <commit-message>"
     echo
     echo "Example:"
-    echo "gitx cp \"Fix bug #531\""
+    echo "ghx cp \"Fix bug #531\""
 }
 
 MESSAGE="$1"

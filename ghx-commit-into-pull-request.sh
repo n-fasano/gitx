@@ -2,10 +2,10 @@
 
 help () {
     echo "Usage:"
-    echo "gitx cpr <commit-message>"
+    echo "ghx cpr <commit-message>"
     echo
     echo "Example:"
-    echo "gitx cpr \"Fix bug #531\""
+    echo "ghx cpr \"Fix bug #531\""
 }
 
 MESSAGE="$1"
@@ -16,4 +16,4 @@ NEW_PR_URL="$(git remote get-url origin | sed "s/\.git/\/pull\/new\/$BRANCH/g")"
 
 git commit -m "$MESSAGE"
 git push --set-upstream origin "$BRANCH"
-"$GITX_BROWSER" "$NEW_PR_URL"
+"$GHX_BROWSER" "$NEW_PR_URL"
